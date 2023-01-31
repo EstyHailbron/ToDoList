@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>ToDoList</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <a href="index.html"><button style="direction: rtl !important;">sign out</button></a>
+
+  <div id="blockUsersTable" style="display: none">
+    <h1>All my users:</h1>
+    <button id="addUserButton" onclick="showAddUserBlock()">add user</button>
+    <div id="addNewUserBlock" style="display: none;">
+      <form action="javascript:void(0);" method="POST" onsubmit="addUser()">
+        <input type="text" id="new-user" placeholder="New user" />
+        <input type="text" id="new-password" placeholder="Password" />
+        <input type="submit" value="Add" />
+      </form>
+    </div>
+
+    <h4>Your users:</h4>
+    <table>
+      <tr>
+        <th>Is Admin?</th>
+        <th>Name</th>
+        <th>Password</th>
+        <th>Delete</th>
+      </tr>
+      <tbody id="result"></tbody>
+    </table>
+  </div>
+  <br />
+  <h1>What I need to do?</h1>
+  <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+    <input type="text" id="new-task" placeholder="New task" />
+    <input type="submit" value="add" />
+  </form>
+  <div id="editForm">
+    <h3>Edit</h3>
+    <form action="javascript:void(0);" onsubmit="updateItem()">
+      <input type="hidden" id="edit-id" />
+      <input type="checkbox" id="edit-isDone" />
+      <input type="text" id="edit-name" />
+      <input type="submit" value="Save" />
+      <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+    </form>
+  </div>
+  <p id="counter"></p>
+  <table>
+    <tr>
+      <th>Is done?</th>
+      <th>Name</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    <tbody id="tasks"></tbody>
+  </table>
+  <br />
+  <br />
+  <div style="display: inline-block;">
+
+    <a href="https://go.postman.co/workspace/My-Workspace~16ee400c-745e-43a7-878e-3fb012a4b69f/collection/25604200-ba3db8aa-9fed-421d-8506-a4a54eec59e3"
+      style="text-decoration: none;"> <button><img src="Image&Fonts/postmanIcon.png" alt="HTML tutorial"
+          style="width: 30px; height: 30px" />link to userList </button></a>
+
+    <!-- <a
+      href="https://warped-flare-940492.postman.co/workspace/2a3a02dc-9ee3-48d8-8d7d-7a5e849cc2cf/collection/24869712-433d3436-5ef1-4ecf-86ba-be876718a608?action=share&creator=24869712"><button><img
+          src="Image&Fonts/postmanIcon.png" alt="HTML tutorial" style="width: 30px; height: 30px" />link to userList
+      </button></a> -->
+  </div>
+  <script src="js/appApi.js" asp-append-version="true"></script>
+
+</body>
+
+</html>
