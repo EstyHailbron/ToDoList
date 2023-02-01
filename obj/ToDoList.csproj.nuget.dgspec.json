@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\project\\ToDoList\\ToDoList.csproj": {}
+    "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\HOMEWORK\\project\\ToDoList\\ToDoList.csproj": {}
   },
   "projects": {
-    "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\project\\ToDoList\\ToDoList.csproj": {
+    "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\HOMEWORK\\project\\ToDoList\\ToDoList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\project\\ToDoList\\ToDoList.csproj",
+        "projectUniqueName": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\HOMEWORK\\project\\ToDoList\\ToDoList.csproj",
         "projectName": "ToDoList",
-        "projectPath": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\project\\ToDoList\\ToDoList.csproj",
+        "projectPath": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\HOMEWORK\\project\\ToDoList\\ToDoList.csproj",
         "packagesPath": "C:\\Users\\אסתי\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\project\\ToDoList\\obj\\",
+        "outputPath": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\HOMEWORK\\project\\ToDoList\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

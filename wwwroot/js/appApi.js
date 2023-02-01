@@ -43,7 +43,7 @@ function displayUsers(data) {
     let textName = document.createTextNode(user.name);
     td2.appendChild(textName);
     let td3 = tr.insertCell(2);
-    let textPassord = document.createTextNode(enecode(user.password));
+    let textPassord = document.createTextNode(encode(user.password));
     td3.appendChild(textPassord);
 
     let td4 = tr.insertCell(3);
@@ -51,7 +51,7 @@ function displayUsers(data) {
   });
   users = data;
 }
-function enecode(password) {
+function encode(password) {
   let encoding = "";
   for (let index = 0; index < password.length; index++)
     encoding += "* ";
@@ -141,6 +141,7 @@ function deleteItem(id) {
 }
 
 function displayEditForm(id) {
+  debugger
   const item = tasks.find((item) => item.id === id);
 
   document.getElementById("edit-name").value = item.name;
@@ -201,6 +202,7 @@ function _displayItems(data) {
 
     let editButton = button.cloneNode(false);
     editButton.innerText = "📝";
+    debugger
     editButton.setAttribute("onclick", `displayEditForm(${item.id})`);
 
     let deleteButton = button.cloneNode(false);

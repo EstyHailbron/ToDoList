@@ -1,10 +1,1 @@
-[
-  { "Id": 1, "Name": "esti", "Password": "1234", "IsAdmin": true },
-  { "Id": 2, "Name": "Shifra", "Password": "1475", "IsAdmin": false },
-  { "Id": 3, "Name": "Yael", "Password": "058", "IsAdmin": false },
-  { "Id": 4, "Name": "Elisheva", "Password": "741", "IsAdmin": false },
-  { "Id": 6, "Name": "talalal", "Password": "1234", "IsAdmin": false },
-  { "Id": 7, "Name": "esti", "Password": "1234", "IsAdmin": false },
-  { "Id": 8, "Name": "talalal", "Password": "12345", "IsAdmin": false },
-  { "Id": 9, "Name": "esti", "Password": "12345", "IsAdmin": false }
-]
+[{"Id":1,"Name":"Esty","Password":"123456789","IsAdmin":true},{"Id":2,"Name":"Shifra","Password":"145444758","IsAdmin":false},{"Id":3,"Name":"Yael","Password":"443308558","IsAdmin":false},{"Id":4,"Name":"Elisheva","Password":"712444541","IsAdmin":false},{"Id":6,"Name":"Chana","Password":"178954234","IsAdmin":false},{"Id":7,"Name":"Shoshi","Password":"564411111","IsAdmin":false},{"Id":8,"Name":"Rivky","Password":"124563545","IsAdmin":false},{"Id":9,"Name":"Ruti","Password":"124656894","IsAdmin":false},{"Id":9,"Name":"Michal","Password":"147859623","IsAdmin":false}]
