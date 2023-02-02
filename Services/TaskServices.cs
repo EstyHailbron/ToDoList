@@ -39,21 +39,16 @@ namespace ToDoList.Services
         public List<MyTask> GetAll(string token)
         {
             String userIdFromToken = TokenService.Decode(token);
-            List<MyTask> tasksFilter = new List<MyTask>();
-            foreach (MyTask task in tasks)
-            {
-                if (task.UserId.ToString()==userIdFromToken)
-                    tasksFilter.Add(task);
-            }
-            return tasksFilter;
+            return tasks.Where(task => task.UserId == int.Parse(userIdFromToken))?.ToList();
         }
 
         public MyTask Get(int id) => tasks.FirstOrDefault(t => t.Id == id);
 
-        public void Add(String token ,MyTask task)
+        public void Add(String token, MyTask task)
         {
-            task.Id = tasks.Count() + 1;
-            task.UserId= int.Parse(TokenService.Decode(token));
+            MyTask lastElement = tasks.LastOrDefault();
+            task.Id = lastElement.Id + 1;
+            task.UserId = int.Parse(TokenService.Decode(token));
             tasks.Add(task);
             saveToFile();
         }
@@ -68,13 +63,13 @@ namespace ToDoList.Services
             saveToFile();
         }
 
-        public void Update(MyTask task )
+        public void Update(MyTask task)
         {
             var index = tasks.FindIndex(t => t.Id == task.Id);
             if (index == -1)
                 return;
             tasks[index].Name = task.Name;
-            tasks[index].IsDone=task.IsDone;
+            tasks[index].IsDone = task.IsDone;
             saveToFile();
         }
         public int Count => tasks.Count();

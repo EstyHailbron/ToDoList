@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nrIEDFHHCGXDOWv5DkNQRjOyJx9GzRG0/Esp41MHVDE=",
+  "Hash": "uChLhH9IdMvXYkoFcpCoNEk8I5ZCIkLkAP+D3qlyffc=",
   "Source": "ToDoList",
   "BasePath": "_content/ToDoList",
   "Mode": "Default",
@@ -34,12 +34,12 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\HOMEWORK\\project\\ToDoList\\wwwroot\\Image&Fonts\\Dellyani.ttf",
+      "Identity": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\HOMEWORK\\project\\ToDoList\\wwwroot\\Fonts\\Dellyani.ttf",
       "SourceId": "ToDoList",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\HOMEWORK\\project\\ToDoList\\wwwroot\\",
       "BasePath": "_content/ToDoList",
-      "RelativePath": "Image&Fonts/Dellyani.ttf",
+      "RelativePath": "Fonts/Dellyani.ttf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -48,24 +48,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Image&Fonts\\Dellyani.ttf"
-    },
-    {
-      "Identity": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\HOMEWORK\\project\\ToDoList\\wwwroot\\Image&Fonts\\postmanIcon.png",
-      "SourceId": "ToDoList",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\HOMEWORK\\project\\ToDoList\\wwwroot\\",
-      "BasePath": "_content/ToDoList",
-      "RelativePath": "Image&Fonts/postmanIcon.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Image&Fonts\\postmanIcon.png"
+      "OriginalItemSpec": "wwwroot\\Fonts\\Dellyani.ttf"
     },
     {
       "Identity": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\HOMEWORK\\project\\ToDoList\\wwwroot\\index.html",

@@ -1,12 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\HOMEWORK\\project\\ToDoList\\wwwroot\\Image&Fonts\\Dellyani.ttf",
-      "PackagePath": "staticwebassets\\Image&Fonts\\Dellyani.ttf"
-    },
-    {
-      "Id": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\HOMEWORK\\project\\ToDoList\\wwwroot\\Image&Fonts\\postmanIcon.png",
-      "PackagePath": "staticwebassets\\Image&Fonts\\postmanIcon.png"
+      "Id": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\HOMEWORK\\project\\ToDoList\\wwwroot\\Fonts\\Dellyani.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Dellyani.ttf"
     },
     {
       "Id": "C:\\Users\\אסתי\\Documents\\לימודים\\CORE\\HOMEWORK\\project\\ToDoList\\wwwroot\\css\\style.css",

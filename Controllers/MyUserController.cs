@@ -27,20 +27,14 @@ namespace ToDoList.Controllers
             MyUser myUser = users.FirstOrDefault(u => u.Name.Equals(user.Name) && u.Password.Equals(user.Password));
             if (myUser == null)
                 return Unauthorized();
-
             var claims = new List<Claim>();
-
             if (myUser.IsAdmin)
                 claims.Add(new Claim("type", "Admin"));
             else
                 claims.Add(new Claim("type", "User"));
             claims.Add(new Claim("userid", myUser.Id.ToString()));
-
             var token = TokenService.GetToken(claims);
-
             return new OkObjectResult(TokenService.WriteToken(token));
-            // return new OkObjectResult(TokenService.WriteToken(token)).ToString();
-
         }
 
         [HttpGet]
@@ -49,7 +43,6 @@ namespace ToDoList.Controllers
         public ActionResult<List<MyUser>> GetAll() =>
             UserService.GetAll();
 
-
         [HttpGet("{id}")]
         [Authorize(Policy = "Admin")]
         public ActionResult<MyUser> Get(int id)
@@ -57,7 +50,6 @@ namespace ToDoList.Controllers
             var user = UserService.Get(id);
             if (user == null)
                 return NotFound();
-
             return user;
         }
 
@@ -67,18 +59,15 @@ namespace ToDoList.Controllers
         {
             UserService.Add(user);
             return CreatedAtAction(nameof(Create), new { id = user.Id }, user);
-
         }
         [HttpDelete("{id}")]
         [Authorize(Policy = "Admin")]
-
         public IActionResult Delete(int id)
         {
-          
             var user = UserService.Get(id);
             if (user is null)
                 return NotFound();
-            if( user.IsAdmin)
+            if (user.IsAdmin)
                 return Forbid();
             UserService.Delete(id);
 

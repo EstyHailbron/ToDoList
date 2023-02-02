@@ -3,35 +3,32 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using ToDoList.Models;
 using ToDoList.Interfaces;
-
+using Microsoft.Net.Http.Headers;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 namespace ToDoList.Controllers
 {
     [ApiController]
     [Route("[controller]")]
     public class MyTaskController : ControllerBase
     {
-        
         ITaskService TaskService;
         ITokenService TokenService;
-        // private string userName;
-        // private int userId;
         public MyTaskController(ITaskService TaskService)
-         {
-            // IHttpContextAccessor httpContextAccessor
-        //     var user = httpContextAccessor.HttpContext.User;
-        //     userName = user.FindFirst("name")?.Value;
-        //     userId = int.Parse(user.FindFirst("UserId")?.Value);
+        {
             this.TaskService = TaskService;
         }
 
-
         [HttpGet]
-        // [HttpGet("{token}")]
-        public ActionResult<List<MyTask>> GetAll(String token) {
-        // this.userId=TokenService.Decode(token);
-        return TaskService.GetAll(token);
+        [Authorize(Policy = ("User"))]
+        public ActionResult<List<MyTask>> GetAll()
+        {
+            var token = Request.Headers[HeaderNames.Authorization].ToString().Replace("Bearer ", "");
+            return TaskService.GetAll(token);
         }
+
         [HttpGet("{id}")]
+        [Authorize(Policy = ("User"))]
         public ActionResult<MyTask> Get(int id)
         {
             var task = TaskService.Get(id);
@@ -41,13 +38,16 @@ namespace ToDoList.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(String token, MyTask task)
+        [Authorize(Policy = ("User"))]
+        public IActionResult Add(MyTask task)
         {
+            var token = Request.Headers[HeaderNames.Authorization].ToString().Replace("Bearer ", "");
             TaskService.Add(token, task);
             return CreatedAtAction(nameof(Add), new { id = task.Id }, task);
         }
 
         [HttpPut("{id}")]
+        [Authorize(Policy = ("User"))]
         public IActionResult Update(int id, MyTask task)
         {
             if (id != task.Id)
@@ -60,6 +60,7 @@ namespace ToDoList.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Policy = ("User"))]
         public IActionResult Delete(int id)
         {
             var task = TaskService.Get(id);

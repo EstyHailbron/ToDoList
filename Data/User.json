@@ -1,1 +1,38 @@
-[{"Id":1,"Name":"Esty","Password":"123456789","IsAdmin":true},{"Id":2,"Name":"Shifra","Password":"145444758","IsAdmin":false},{"Id":3,"Name":"Yael","Password":"443308558","IsAdmin":false},{"Id":4,"Name":"Elisheva","Password":"712444541","IsAdmin":false},{"Id":6,"Name":"Chana","Password":"178954234","IsAdmin":false},{"Id":7,"Name":"Shoshi","Password":"564411111","IsAdmin":false},{"Id":8,"Name":"Rivky","Password":"124563545","IsAdmin":false},{"Id":9,"Name":"Ruti","Password":"124656894","IsAdmin":false},{"Id":9,"Name":"Michal","Password":"147859623","IsAdmin":false},{"Id":10,"Name":"Shira","Password":"123654987","IsAdmin":false}]
+[
+  {
+    "Id": 1,
+    "Name": "Esty",
+    "Password": "123456789",
+    "IsAdmin": true
+  },
+  {
+    "Id": 2,
+    "Name": "Shifra",
+    "Password": "147674435",
+    "IsAdmin": false
+  },
+  {
+    "Id": 3,
+    "Name": "Tal",
+    "Password": "14887234",
+    "IsAdmin": false
+  },
+  {
+    "Id": 4,
+    "Name": "Tamar",
+    "Password": "748787871",
+    "IsAdmin": false
+  },
+  {
+    "Id": 5,
+    "Name": "Noha",
+    "Password": "144447234",
+    "IsAdmin": false
+  },
+  {
+    "Id": 6,
+    "Name": "Amir",
+    "Password": "765372292",
+    "IsAdmin": false
+  }
+]
