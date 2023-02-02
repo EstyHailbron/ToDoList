@@ -9,4 +9,4 @@ an administrator can receive the list of users, and the option to add new users.
 
 Developed by Tamar Shayo & Esty Hailbron 👍:
 # Postman link
-https://elements.getpostman.com/redirect?entityId=24869712-433d3436-5ef1-4ecf-86ba-be876718a608&entityType=collection
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/24869712-433d3436-5ef1-4ecf-86ba-be876718a608?action=collection%2Ffork&collection-url=entityId%3D24869712-433d3436-5ef1-4ecf-86ba-be876718a608%26entityType%3Dcollection%26workspaceId%3D2a4982b8-b1f0-4dfb-8389-02ee815779b7)
