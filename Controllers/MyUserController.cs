@@ -6,6 +6,7 @@ using ToDoList.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using ToDoList.Services;
+using Microsoft.Net.Http.Headers;
 
 namespace ToDoList.Controllers
 {
@@ -72,6 +73,16 @@ namespace ToDoList.Controllers
             UserService.Delete(id);
 
             return Content(UserService.Count.ToString());
+            
+        }
+
+        [HttpGet]
+        [Route("[action]")]
+        [Authorize(Policy = "User")]
+        public bool checkPolicy() {
+            var token = Request.Headers[HeaderNames.Authorization].ToString().Replace("Bearer ", "");
+           bool Admin= UserService.checkPolicy(token);
+           return Admin;
         }
     }
 }

@@ -60,6 +60,11 @@ namespace ToDoList.Services
             saveToFile();
         }
         public int Count => users.Count();
+        public bool checkPolicy(String token) {
+           int id= int.Parse(TokenService.Decode(token));
+           MyUser user= users.FirstOrDefault(t => t.Id == id);
+           return user.IsAdmin;
+        }
 
     }
 
