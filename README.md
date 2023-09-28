@@ -8,6 +8,7 @@ an administrator can receive the list of users, and the option to add new users.
 "ScreenShot" is a screenshot of the project pages
 
 Developed by Esty Hailbron 👍
+
 Admin details: {Name: "Esty", Password:"123456789"}
 
 # Postman link
